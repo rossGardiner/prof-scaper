@@ -1,0 +1,20 @@
+<Insert Student Name Here>
+GUID:
+Date:
+200 words max
+Some questions to consider:
+
+Does your code build properly with "stack build"?
+Yes
+
+Are there any parts of the specification you did not implement in part
+A?
+No, not to the best of my knowledge
+
+For the 'stretch' part B, which libraries did you use and what kind of
+output did you generate?
+For part B, I used haskell-chart, but was unable to get the cairo backend dependency working.
+I instead used the Diagrams backend, which is largely a clone of cairo so far as I can tell. 
+The output generated is an svg file containing a pie-chart of the professors in each department. 
+After running Main.hs, this can be found in the top-level directory (/prof-scraper/output.svg)
+

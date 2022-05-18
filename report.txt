@@ -1,0 +1,48 @@
+Ross Gardiner
+GUID: 2190583g
+Date: 14/01/2021
+
+NOTE: My program produces a Pie-chart output of the recorded professors in 
+each school. The output file is called "output.svg" and should be found in the top-level directory
+i.e /prof-scraper/output.svg
+
+This report details my experiences writing Haskell with a background in imperitive programming. 
+Below I touch on what love about Haskell and what may stop me from using Haskell in the future. 
+I also give details on differences I have observed between the Haskell language and typical 
+procedural languages, for example, Python or Java. 
+
+Haskell and Java are similar in that they abstract much of the implementation details of the language
+from the programmer. For example, memory management is automated in Haskell and in Java. While the 
+automation of memory management gives less control to the programmer, it does make it easier to write 
+efficent programs in general and performance of Haskell code will improve as compilers continue to
+become more efficent. 
+
+The major advantage and difference of Haskell over procedural languages is the idea that a program can 
+be defined as a collection of pure functions. A pure function produces an output without modifiying any 
+external data or the input. As a result of this, it is far easier to define a component’s behaviour 
+since it must satisfy mathematical-like equations within the program logic. This makes Haskell code more 
+transparent, more descriptive and easier to parallelise than that of a procudual language. I noticed this 
+when working on the assignment because all of the errors I encountered were at compile-time, never at 
+runtime. This practially showed me that once the program logic was set, the runtime behaviour has been 
+rigourously defined. My guess is that this makes functional programming very attractive for 
+security-centered software engineering and safety-critical systems.
+
+In my view, the main drawback of using Haskell is the immaturity of the libraries and surrounding eco-system. 
+I found it challenging to find accurate and up-to-date documentation on the haskell-chart library I have used 
+to create the output pie-chart. As a result of this I spent far longer on my implementation of the code which 
+produces a graphical output than I would have done using Python with, for example, the matplotlib libarary. 
+However, I suspect that as Haskell gains more mainstream momentum the technologies will mature and it may be 
+able to compete with popular procedural langauges on this front – if not Haskell, then some other functional 
+language. 
+
+Another drawback of Haskell is platform compatibility. I am concerned that Haskell has a RAM footprint too 
+large for many smaller microcontrollers to run programs. It’s imperitive competitor, Python, is available in 
+flavours with reduced memory footprints to improve platform compatibility (eg MicroPython) Haskell has no such 
+variant. 
+
+In summary, this assessment has somewhat changed my view on functional programming. Beforehand I disliked 
+Haskell because I thought the syntax to be overly complicated and more useful as a logic puzzle than a 
+programming language. After experiencing the benefits first-hand, I now belive that if I had the same amount 
+of exposure to functional programming as I have to procedural then I would not find the logic as challenging 
+and would surely write more concise, bulletproof programs. 
+
